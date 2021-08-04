@@ -1,0 +1,1072 @@
+[
+    {
+        "likes": 15294,
+        "movies": [
+            {
+                "average_star": 0,
+                "director": "James Gunn",
+                "likes": 783,
+                "stars": "Margot Robbie, Idris Elba, John Cena, Joel Kinnaman",
+                "storyline": "Based on Disneyland's theme park ride where a small riverboat takes a group of travelers through a jungle filled with dangerous animals and reptiles but with a supernatural element.",
+                "title": "Jungle Cruise",
+                "views": 30666,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Jaume Collet-Serra",
+                "likes": 360,
+                "stars": "Dwayne Johnson, Emily Blunt, Edgar Ramírez, Jack Whitehall",
+                "storyline": "Follows an American football coach Ted Lasso who heads to the U.K. to manage a struggling London football team in the top flight of English football.",
+                "title": "Ted Lasso",
+                "views": 35905,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 2138,
+                "stars": "Stephen Manas, Moe Jeudy-Lamour, Jason Sudeikis, Hannah Waddingham",
+                "storyline": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
+                "title": "Rick and Morty",
+                "views": 41389,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 1494,
+                "stars": "Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke",
+                "storyline": "A rogue artificial intelligence kidnaps the son of famed basketball player ",
+                "title": "Space Jam: A New Legacy",
+                "views": 16608,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Malcolm D. Lee",
+                "likes": 1620,
+                "stars": "LeBron James, Don Cheadle, Cedric Joe, Khris Davis",
+                "storyline": " who then has to work with Bugs Bunny to win a basketball game.",
+                "title": "The White Lotus",
+                "views": 13137,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 3322,
+                "stars": "Murray Bartlett, Connie Britton, Jennifer Coolidge, Alexandra Daddario",
+                "storyline": "Set in a tropical resort, it follows the exploits of various guests and employees over the span of a week.",
+                "title": "Ghostbusters: Afterlife",
+                "views": 31015,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Jason Reitman",
+                "likes": 2587,
+                "stars": "Finn Wolfhard, Mckenna Grace, Carrie Coon, Sigourney Weaver",
+                "storyline": "When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and the secret legacy their grandfather left behind.",
+                "title": "Never Have I Ever",
+                "views": 5835,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 1981,
+                "stars": "Maitreyi Ramakrishnan, Poorna Jagannathan, Darren Barnet, John McEnroe",
+                "storyline": "The complicated life of a modern-day first generation Indian American teenage girl, inspired by Mindy Kaling's own childhood.",
+                "title": "Mimi",
+                "views": 49139,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "Laxman Utekar",
+                "likes": 785,
+                "stars": "Kriti Sanon, Evelyn Edwards, Pankaj Tripathi, Sai Tamhankar",
+                "storyline": "Mimi is introduced by Bhanu to an American couple as a surrogate in exchange for Rs 2 million. She decides to have the baby even when they change their mind and tells her parent that Bhanu is the father.",
+                "title": "Sex/Life",
+                "views": 22526,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 224,
+                "stars": "Sarah Shahi, Mike Vogel, Adam Demos, Margaret Odette",
+                "storyline": "A suburban mother of two takes a fantasy-charged trip down memory lane that sets her very married present on a collision course with her wild-child past.",
+                "title": "Schmigadoon!",
+                "views": 19505,
+                "writers": ""
+            }
+        ],
+        "name": "COMEDY",
+        "views": 265725
+    },
+    {
+        "likes": 19938,
+        "movies": [
+            {
+                "average_star": 0,
+                "director": "James Gunn",
+                "likes": 3070,
+                "stars": "Margot Robbie, Idris Elba, John Cena, Joel Kinnaman",
+                "storyline": "The war for Eternia begins again in what may be the final battle between He-Man and Skeletor. A new animated series from writer-director Kevin Smith.",
+                "title": "Masters of the Universe: Revelation",
+                "views": 44,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 385,
+                "stars": "Chris Wood, Sarah Michelle Gellar, Lena Headey, Mark Hamill",
+                "storyline": "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
+                "title": "Black Widow",
+                "views": 14164,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "Cate Shortland",
+                "likes": 3997,
+                "stars": "Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz",
+                "storyline": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
+                "title": "Rick and Morty",
+                "views": 46901,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 1338,
+                "stars": "Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke",
+                "storyline": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”",
+                "title": "Loki",
+                "views": 41805,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "",
+                "likes": 2890,
+                "stars": "Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino",
+                "storyline": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+                "title": "Dune",
+                "views": 17449,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Denis Villeneuve",
+                "likes": 275,
+                "stars": "Timothée Chalamet, Rebecca Ferguson, Zendaya, Jason Momoa",
+                "storyline": "A rogue artificial intelligence kidnaps the son of famed basketball player ",
+                "title": "Space Jam: A New Legacy",
+                "views": 36492,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Malcolm D. Lee",
+                "likes": 1,
+                "stars": "LeBron James, Don Cheadle, Cedric Joe, Khris Davis",
+                "storyline": " who then has to work with Bugs Bunny to win a basketball game.",
+                "title": "Army of Thieves",
+                "views": 26041,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "Matthias Schweighöfer",
+                "likes": 1907,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Snake Eyes",
+                "views": 12185,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Robert Schwentke",
+                "likes": 2361,
+                "stars": "Henry Golding, Andrew Koji, Haruka Abe, Takehiro Hira",
+                "storyline": "A G.I. Joe spin-off centered around the character of Snake Eyes.",
+                "title": "The Tomorrow War",
+                "views": 49380,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "Chris McKay",
+                "likes": 3714,
+                "stars": "Chris Pratt, Yvonne Strahovski, J.K. Simmons, Betty Gilpin",
+                "storyline": "A family man is drafted to fight in a future war where the fate of humanity relies on his ability to confront the past.",
+                "title": "Manifest",
+                "views": 48970,
+                "writers": ""
+            }
+        ],
+        "name": "SCI-FI",
+        "views": 293431
+    },
+    {
+        "likes": 24719,
+        "movies": [
+            {
+                "average_star": 2,
+                "director": "Peter Thorwarth",
+                "likes": 2467,
+                "stars": "Peri Baumeister, Carl Anton Koch, Alexander Scheer, Kais Setti",
+                "storyline": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+                "title": "The Walking Dead",
+                "views": 14526,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "",
+                "likes": 3654,
+                "stars": "Andrew Lincoln, Norman Reedus, Melissa McBride, Lauren Cohan",
+                "storyline": "An anthology series of stand-alone episodes delving into horror myths, legends, and lore.",
+                "title": "American Horror Stories",
+                "views": 24532,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 1294,
+                "stars": "Sierra McCormick, Paris Jackson, Selena Sloan, Ashley Martin Carter",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Army of Thieves",
+                "views": 16372,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Matthias Schweighöfer",
+                "likes": 2235,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize the creatures that hunt by sound are not the only threats lurking beyond the sand path.",
+                "title": "A Quiet Place Part II",
+                "views": 25898,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "John Krasinski",
+                "likes": 3481,
+                "stars": "Emily Blunt, Millicent Simmonds, Cillian Murphy, John Krasinski",
+                "storyline": "A circle of teenage friends accidentally encounter the ancient evil responsible for a series of brutal murders that have plagued their town for over 300 years. Welcome to Shadyside.",
+                "title": "Fear Street: Part One - 1994",
+                "views": 37428,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Leigh Janiak",
+                "likes": 2066,
+                "stars": "Kiana Madeira, Olivia Scott Welch, Benjamin Flores Jr., Julia Rehwald",
+                "storyline": "An anthology series centering on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a freak show circus, a haunted hotel, a possessed farmhouse, a cult, the apocalypse, and a slasher summer camp.",
+                "title": "American Horror Story",
+                "views": 21623,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 1692,
+                "stars": "Lady Gaga, Kathy Bates, Angela Bassett, Sarah Paulson",
+                "storyline": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+                "title": "Stranger Things",
+                "views": 43966,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "",
+                "likes": 2009,
+                "stars": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder, David Harbour",
+                "storyline": "Shadyside, 1978. School's out for summer and the activities at Camp Nightwing are about to begin. But when another Shadysider is possessed with the urge to kill, the fun in the sun becomes a gruesome fight for survival.",
+                "title": "Fear Street: Part Two - 1978",
+                "views": 40149,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "Leigh Janiak",
+                "likes": 2613,
+                "stars": "Sadie Sink, Emily Rudd, Ryan Simpkins, McCabe Slye",
+                "storyline": "All the rules are broken as a sect of lawless marauders decides that the annual Purge does not stop at daybreak and instead should never end.",
+                "title": "The Forever Purge",
+                "views": 28762,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Everardo Gout",
+                "likes": 3208,
+                "stars": "Ana de la Reguera, Tenoch Huerta, Josh Lucas, Leven Rambin",
+                "storyline": "A couple travels to Scandinavia to visit a rural hometown's fabled Swedish mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.",
+                "title": "Midsommar",
+                "views": 11434,
+                "writers": ""
+            }
+        ],
+        "name": "HORROR",
+        "views": 264690
+    },
+    {
+        "likes": 17592,
+        "movies": [
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 1194,
+                "stars": "Chase Stokes, Madelyn Cline, Madison Bailey, Jonathan Daviss",
+                "storyline": "A pair of interwoven stories set in the past and present follow an ambitious journalist determined to solve the mystery of a forbidden love affair at the center of a trove of secret love letters from 1965.",
+                "title": "The Last Letter from Your Lover",
+                "views": 29167,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Augustine Frizzell",
+                "likes": 1619,
+                "stars": "Shailene Woodley, Joe Alwyn, Wendy Nottingham, Felicity Jones",
+                "storyline": "Seeking a fresh start, nurse practitioner Melinda Monroe moves from Los Angeles to a remote Northern California town and is surprised by what and who she finds.",
+                "title": "Virgin River",
+                "views": 12367,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 2904,
+                "stars": "Alexandra Breckenridge, Martin Henderson, Colin Lawrence, Tim Matheson",
+                "storyline": "A suburban mother of two takes a fantasy-charged trip down memory lane that sets her very married present on a collision course with her wild-child past.",
+                "title": "Sex/Life",
+                "views": 5189,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 3986,
+                "stars": "Sarah Shahi, Mike Vogel, Adam Demos, Margaret Odette",
+                "storyline": "A drama centered on the personal and professional lives of five surgical interns and their supervisors.",
+                "title": "Grey's Anatomy",
+                "views": 49977,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 681,
+                "stars": "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Justin Chambers",
+                "storyline": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+                "title": "Friends",
+                "views": 24142,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 2001,
+                "stars": "Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc",
+                "storyline": "A story about a heroic fireman who worked as one of Chernobyl liquidators.",
+                "title": "Chernobyl: Abyss",
+                "views": 23393,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Danila Kozlovskiy",
+                "likes": 1629,
+                "stars": "Danila Kozlovskiy, Oksana Akinshina, Filipp Avdeev, Ravshana Kurkova",
+                "storyline": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
+                "title": "Vikings",
+                "views": 35033,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "",
+                "likes": 362,
+                "stars": "Katheryn Winnick, Gustaf Skarsgård, Alexander Ludwig, Georgia Hirst",
+                "storyline": "Revival of the TV series centering on a new generation of New York private school teens using social media to spread gossip.",
+                "title": "Gossip Girl",
+                "views": 9409,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 2148,
+                "stars": "Jordan Alexander, Whitney Peak, Tavi Gevinson, Eli Brown",
+                "storyline": "Three different but related families face trials and tribulations in their own uniquely comedic ways.",
+                "title": "Modern Family",
+                "views": 30788,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 1068,
+                "stars": "Ed O'Neill, Sofía Vergara, Julie Bowen, Ty Burrell",
+                "storyline": "A chronicle of the lives of the British aristocratic Crawley family and their servants in the early twentieth century.",
+                "title": "Downton Abbey",
+                "views": 37558,
+                "writers": ""
+            }
+        ],
+        "name": "ROMANCE",
+        "views": 257023
+    },
+    {
+        "likes": 23217,
+        "movies": [
+            {
+                "average_star": 0,
+                "director": "James Gunn",
+                "likes": 3763,
+                "stars": "Margot Robbie, Idris Elba, John Cena, Joel Kinnaman",
+                "storyline": "A woman with a mysterious illness is forced into action when a group of terrorists attempt to hijack a transatlantic overnight flight.",
+                "title": "Blood Red Sky",
+                "views": 21713,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "Peter Thorwarth",
+                "likes": 3643,
+                "stars": "Peri Baumeister, Carl Anton Koch, Alexander Scheer, Kais Setti",
+                "storyline": "Based on Disneyland's theme park ride where a small riverboat takes a group of travelers through a jungle filled with dangerous animals and reptiles but with a supernatural element.",
+                "title": "Jungle Cruise",
+                "views": 24163,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Jaume Collet-Serra",
+                "likes": 3984,
+                "stars": "Dwayne Johnson, Emily Blunt, Edgar Ramírez, Jack Whitehall",
+                "storyline": "The war for Eternia begins again in what may be the final battle between He-Man and Skeletor. A new animated series from writer-director Kevin Smith.",
+                "title": "Masters of the Universe: Revelation",
+                "views": 29581,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 967,
+                "stars": "Chris Wood, Sarah Michelle Gellar, Lena Headey, Mark Hamill",
+                "storyline": "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
+                "title": "Black Widow",
+                "views": 12698,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Cate Shortland",
+                "likes": 2925,
+                "stars": "Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz",
+                "storyline": "A bouncer with a slightly murderous anger-management problem that she controls with the help of an electrode-lined vest she uses to shock herself back to normalcy whenever she gets homicidal.",
+                "title": "Jolt",
+                "views": 29553,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Tanya Wexler",
+                "likes": 2675,
+                "stars": "Kate Beckinsale, Jai Courtney, Stanley Tucci, Bobby Cannavale",
+                "storyline": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
+                "title": "F9: The Fast Saga",
+                "views": 3347,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Justin Lin",
+                "likes": 944,
+                "stars": "Vin Diesel, Michelle Rodriguez, Jordana Brewster, Tyrese Gibson",
+                "storyline": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”",
+                "title": "Loki",
+                "views": 22562,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 391,
+                "stars": "Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino",
+                "storyline": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+                "title": "Game of Thrones",
+                "views": 46415,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 2964,
+                "stars": "Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Army of Thieves",
+                "views": 34569,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Matthias Schweighöfer",
+                "likes": 961,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.",
+                "title": "Outer Banks",
+                "views": 20996,
+                "writers": ""
+            }
+        ],
+        "name": "ACTION",
+        "views": 245597
+    },
+    {
+        "likes": 11222,
+        "movies": [
+            {
+                "average_star": 4,
+                "director": "M. Night Shyamalan",
+                "likes": 1143,
+                "stars": "Gael García Bernal, Vicky Krieps, Rufus Sewell, Alex Wolff",
+                "storyline": "A woman with a mysterious illness is forced into action when a group of terrorists attempt to hijack a transatlantic overnight flight.",
+                "title": "Blood Red Sky",
+                "views": 26057,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Peter Thorwarth",
+                "likes": 625,
+                "stars": "Peri Baumeister, Carl Anton Koch, Alexander Scheer, Kais Setti",
+                "storyline": "A bouncer with a slightly murderous anger-management problem that she controls with the help of an electrode-lined vest she uses to shock herself back to normalcy whenever she gets homicidal.",
+                "title": "Jolt",
+                "views": 39739,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Tanya Wexler",
+                "likes": 1915,
+                "stars": "Kate Beckinsale, Jai Courtney, Stanley Tucci, Bobby Cannavale",
+                "storyline": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+                "title": "The Walking Dead",
+                "views": 32069,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 3794,
+                "stars": "Andrew Lincoln, Norman Reedus, Melissa McBride, Lauren Cohan",
+                "storyline": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
+                "title": "F9: The Fast Saga",
+                "views": 6285,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Justin Lin",
+                "likes": 305,
+                "stars": "Vin Diesel, Michelle Rodriguez, Jordana Brewster, Tyrese Gibson",
+                "storyline": "Spanning three decades of love, betrayal, decadence, revenge, and ultimately murder, we see what a name means, what it's worth, and how far a family will go for control.",
+                "title": "House of Gucci",
+                "views": 7527,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "Ridley Scott",
+                "likes": 776,
+                "stars": "Jared Leto, Salma Hayek, Adam Driver, Al Pacino",
+                "storyline": "A truffle hunter who lives alone in the Oregonian wilderness must return to his past in Portland in search of his beloved foraging pig after she is kidnapped.",
+                "title": "Pig",
+                "views": 33375,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Michael Sarnoski",
+                "likes": 94,
+                "stars": "Nicolas Cage, Alex Wolff, Adam Arkin, Cassandra Violet",
+                "storyline": "An anthology series of stand-alone episodes delving into horror myths, legends, and lore.",
+                "title": "American Horror Stories",
+                "views": 4703,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 1155,
+                "stars": "Sierra McCormick, Paris Jackson, Selena Sloan, Ashley Martin Carter",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Army of Thieves",
+                "views": 26054,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Matthias Schweighöfer",
+                "likes": 841,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.",
+                "title": "Outer Banks",
+                "views": 9835,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 574,
+                "stars": "Chase Stokes, Madelyn Cline, Madison Bailey, Jonathan Daviss",
+                "storyline": "A G.I. Joe spin-off centered around the character of Snake Eyes.",
+                "title": "Snake Eyes",
+                "views": 7638,
+                "writers": ""
+            }
+        ],
+        "name": "THRILLER",
+        "views": 193282
+    },
+    {
+        "likes": 25715,
+        "movies": [
+            {
+                "average_star": 3,
+                "director": "M. Night Shyamalan",
+                "likes": 3730,
+                "stars": "Gael García Bernal, Vicky Krieps, Rufus Sewell, Alex Wolff",
+                "storyline": "Follows an American football coach Ted Lasso who heads to the U.K. to manage a struggling London football team in the top flight of English football.",
+                "title": "Ted Lasso",
+                "views": 21642,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 2745,
+                "stars": "Stephen Manas, Moe Jeudy-Lamour, Jason Sudeikis, Hannah Waddingham",
+                "storyline": "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+                "title": "The Walking Dead",
+                "views": 16508,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 1160,
+                "stars": "Andrew Lincoln, Norman Reedus, Melissa McBride, Lauren Cohan",
+                "storyline": "A fantasy re-telling of the medieval story of Sir Gawain and the Green Knight.",
+                "title": "The Green Knight",
+                "views": 11948,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "David Lowery",
+                "likes": 3915,
+                "stars": "Dev Patel, Alicia Vikander, Joel Edgerton, Sarita Choudhury",
+                "storyline": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+                "title": "Dune",
+                "views": 15808,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Denis Villeneuve",
+                "likes": 2385,
+                "stars": "Timothée Chalamet, Rebecca Ferguson, Zendaya, Jason Momoa",
+                "storyline": "Set in a tropical resort, it follows the exploits of various guests and employees over the span of a week.",
+                "title": "The White Lotus",
+                "views": 8230,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 1913,
+                "stars": "Murray Bartlett, Connie Britton, Jennifer Coolidge, Alexandra Daddario",
+                "storyline": "Spanning three decades of love, betrayal, decadence, revenge, and ultimately murder, we see what a name means, what it's worth, and how far a family will go for control.",
+                "title": "House of Gucci",
+                "views": 32392,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Ridley Scott",
+                "likes": 2961,
+                "stars": "Jared Leto, Salma Hayek, Adam Driver, Al Pacino",
+                "storyline": "A truffle hunter who lives alone in the Oregonian wilderness must return to his past in Portland in search of his beloved foraging pig after she is kidnapped.",
+                "title": "Pig",
+                "views": 26072,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "Michael Sarnoski",
+                "likes": 3844,
+                "stars": "Nicolas Cage, Alex Wolff, Adam Arkin, Cassandra Violet",
+                "storyline": "An anthology series of stand-alone episodes delving into horror myths, legends, and lore.",
+                "title": "American Horror Stories",
+                "views": 23859,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 1391,
+                "stars": "Sierra McCormick, Paris Jackson, Selena Sloan, Ashley Martin Carter",
+                "storyline": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+                "title": "Game of Thrones",
+                "views": 31908,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 1671,
+                "stars": "Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey",
+                "storyline": "A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.",
+                "title": "Outer Banks",
+                "views": 30003,
+                "writers": ""
+            }
+        ],
+        "name": "DRAMA",
+        "views": 218370
+    },
+    {
+        "likes": 23058,
+        "movies": [
+            {
+                "average_star": 4,
+                "director": "M. Night Shyamalan",
+                "likes": 2993,
+                "stars": "Gael García Bernal, Vicky Krieps, Rufus Sewell, Alex Wolff",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Army of Thieves",
+                "views": 4105,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Matthias Schweighöfer",
+                "likes": 3600,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.",
+                "title": "Outer Banks",
+                "views": 14627,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 2037,
+                "stars": "Chase Stokes, Madelyn Cline, Madison Bailey, Jonathan Daviss",
+                "storyline": "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
+                "title": "Dexter",
+                "views": 49123,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "",
+                "likes": 2533,
+                "stars": "Michael C. Hall, Jennifer Carpenter, David Zayas, James Remar",
+                "storyline": "A commercial airliner suddenly reappears after being missing for five years. As those aboard reintegrate into society, they experience guiding voices and visions of events yet to occur, and soon a deeper mystery unfolds.",
+                "title": "Manifest",
+                "views": 17653,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 3882,
+                "stars": "Melissa Roxburgh, Josh Dallas, Athena Karkanis, J.R. Ramirez",
+                "storyline": "A circle of teenage friends accidentally encounter the ancient evil responsible for a series of brutal murders that have plagued their town for over 300 years. Welcome to Shadyside.",
+                "title": "Fear Street: Part One - 1994",
+                "views": 30971,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Leigh Janiak",
+                "likes": 3282,
+                "stars": "Kiana Madeira, Olivia Scott Welch, Benjamin Flores Jr., Julia Rehwald",
+                "storyline": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+                "title": "Stranger Things",
+                "views": 38402,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 3567,
+                "stars": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder, David Harbour",
+                "storyline": "Shadyside, 1978. School's out for summer and the activities at Camp Nightwing are about to begin. But when another Shadysider is possessed with the urge to kill, the fun in the sun becomes a gruesome fight for survival.",
+                "title": "Fear Street: Part Two - 1978",
+                "views": 18194,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Leigh Janiak",
+                "likes": 627,
+                "stars": "Sadie Sink, Emily Rudd, Ryan Simpkins, McCabe Slye",
+                "storyline": "A detective in a small Pennsylvania town investigates a local murder while trying to keep her life from falling apart.",
+                "title": "Mare of Easttown",
+                "views": 36330,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 508,
+                "stars": "Kate Winslet, Julianne Nicholson, Jean Smart, Angourie Rice",
+                "storyline": "The cases of the F.B.I. Behavioral Analysis Unit (B.A.U.), an elite group of profilers who analyze the nation's most dangerous serial killers and individual heinous crimes in an effort to anticipate their next moves before they strike again.",
+                "title": "Criminal Minds",
+                "views": 33866,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 29,
+                "stars": "Matthew Gray Gubler, Kirsten Vangsness, A.J. Cook, Joe Mantegna",
+                "storyline": "A couple travels to Scandinavia to visit a rural hometown's fabled Swedish mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.",
+                "title": "Midsommar",
+                "views": 19321,
+                "writers": ""
+            }
+        ],
+        "name": "MYSTERY",
+        "views": 262592
+    },
+    {
+        "likes": 15826,
+        "movies": [
+            {
+                "average_star": 5,
+                "director": "Justin Lin",
+                "likes": 628,
+                "stars": "Vin Diesel, Michelle Rodriguez, Jordana Brewster, Tyrese Gibson",
+                "storyline": "Spanning three decades of love, betrayal, decadence, revenge, and ultimately murder, we see what a name means, what it's worth, and how far a family will go for control.",
+                "title": "House of Gucci",
+                "views": 43508,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Ridley Scott",
+                "likes": 1402,
+                "stars": "Jared Leto, Salma Hayek, Adam Driver, Al Pacino",
+                "storyline": "A prequel, set before the events of Army of the Dead, which focuses on German safecracker Ludwig Dieter leading a group of aspiring thieves on a top secret heist during the early stages of the zombie apocalypse.",
+                "title": "Army of Thieves",
+                "views": 1774,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "Matthias Schweighöfer",
+                "likes": 3872,
+                "stars": "Matthias Schweighöfer, Nathalie Emmanuel, Ruby O. Fee, Stuart Martin",
+                "storyline": "A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.",
+                "title": "Outer Banks",
+                "views": 38089,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 757,
+                "stars": "Chase Stokes, Madelyn Cline, Madison Bailey, Jonathan Daviss",
+                "storyline": "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
+                "title": "Dexter",
+                "views": 43713,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 606,
+                "stars": "Michael C. Hall, Jennifer Carpenter, David Zayas, James Remar",
+                "storyline": "A father travels from Oklahoma to France to help his estranged daughter, who is in prison for a murder she claims she didn't commit.",
+                "title": "Stillwater",
+                "views": 34102,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "Tom McCarthy",
+                "likes": 382,
+                "stars": "Matt Damon, Camille Cottin, Abigail Breslin, Lilou Siauvaud",
+                "storyline": "As patients entering the operating room of Dr. Christopher Duntsch for routine spinal surgeries start leaving permanently maimed or dead, two fellow surgeons and a young Assistant District Attorney set out to stop him.",
+                "title": "Dr. Death",
+                "views": 48497,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 2089,
+                "stars": "Joshua Jackson, Christian Slater, Alec Baldwin, Dominic Burgess",
+                "storyline": "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.",
+                "title": "Lucifer",
+                "views": 9860,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 2309,
+                "stars": "Tom Ellis, Lesley-Ann Brandt, Lauren German, D.B. Woodside",
+                "storyline": "The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.",
+                "title": "Wrath of Man",
+                "views": 30401,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Guy Ritchie",
+                "likes": 746,
+                "stars": "Jason Statham, Holt McCallany, Josh Hartnett, Rocci Williams",
+                "storyline": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+                "title": "Breaking Bad",
+                "views": 6289,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "",
+                "likes": 3035,
+                "stars": "Bryan Cranston, Aaron Paul, Anna Gunn, Betsy Brandt",
+                "storyline": "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+                "title": "The Sopranos",
+                "views": 19400,
+                "writers": ""
+            }
+        ],
+        "name": "CRIME",
+        "views": 275633
+    },
+    {
+        "likes": 16958,
+        "movies": [
+            {
+                "average_star": 5,
+                "director": "Jaume Collet-Serra",
+                "likes": 13,
+                "stars": "Dwayne Johnson, Emily Blunt, Edgar Ramírez, Jack Whitehall",
+                "storyline": "The war for Eternia begins again in what may be the final battle between He-Man and Skeletor. A new animated series from writer-director Kevin Smith.",
+                "title": "Masters of the Universe: Revelation",
+                "views": 28228,
+                "writers": ""
+            },
+            {
+                "average_star": 0,
+                "director": "",
+                "likes": 3400,
+                "stars": "Chris Wood, Sarah Michelle Gellar, Lena Headey, Mark Hamill",
+                "storyline": "A fantasy re-telling of the medieval story of Sir Gawain and the Green Knight.",
+                "title": "The Green Knight",
+                "views": 6972,
+                "writers": ""
+            },
+            {
+                "average_star": 1,
+                "director": "David Lowery",
+                "likes": 462,
+                "stars": "Dev Patel, Alicia Vikander, Joel Edgerton, Sarita Choudhury",
+                "storyline": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”",
+                "title": "Loki",
+                "views": 39537,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 1460,
+                "stars": "Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino",
+                "storyline": "A rogue artificial intelligence kidnaps the son of famed basketball player ",
+                "title": "Space Jam: A New Legacy",
+                "views": 30343,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Malcolm D. Lee",
+                "likes": 814,
+                "stars": "LeBron James, Don Cheadle, Cedric Joe, Khris Davis",
+                "storyline": " who then has to work with Bugs Bunny to win a basketball game.",
+                "title": "Ghostbusters: Afterlife",
+                "views": 22763,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "Jason Reitman",
+                "likes": 1445,
+                "stars": "Finn Wolfhard, Mckenna Grace, Carrie Coon, Sigourney Weaver",
+                "storyline": "When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and the secret legacy their grandfather left behind.",
+                "title": "Game of Thrones",
+                "views": 28155,
+                "writers": ""
+            },
+            {
+                "average_star": 4,
+                "director": "",
+                "likes": 33,
+                "stars": "Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey",
+                "storyline": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+                "title": "Snake Eyes",
+                "views": 9892,
+                "writers": ""
+            },
+            {
+                "average_star": 5,
+                "director": "Robert Schwentke",
+                "likes": 2161,
+                "stars": "Henry Golding, Andrew Koji, Haruka Abe, Takehiro Hira",
+                "storyline": "A G.I. Joe spin-off centered around the character of Snake Eyes.",
+                "title": "Lucifer",
+                "views": 41617,
+                "writers": ""
+            },
+            {
+                "average_star": 3,
+                "director": "",
+                "likes": 3316,
+                "stars": "Tom Ellis, Lesley-Ann Brandt, Lauren German, D.B. Woodside",
+                "storyline": "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.",
+                "title": "Stranger Things",
+                "views": 47500,
+                "writers": ""
+            },
+            {
+                "average_star": 2,
+                "director": "",
+                "likes": 3854,
+                "stars": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder, David Harbour",
+                "storyline": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+                "title": "Luca",
+                "views": 36089,
+                "writers": ""
+            }
+        ],
+        "name": "FANTASY",
+        "views": 291096
+    }
+]
