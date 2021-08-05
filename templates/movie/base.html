@@ -15,11 +15,12 @@
         <div>
             <li><a href="{% url 'movie:index' %}">Home</a></li>
 
-            <form action={% url 'movie:search'%} >
-                <input type="text">
+            <form action="{% url 'article:haystack_search' %}" method="get">
+                <input type="text" name="q" placeholder="请输入关键字">
+                <input type="submit" id="search" value="搜索">
             </form>
             {% comment %} 
-                这里需要一个搜索框（已有，待优化）
+                这里需要一个搜索框（已优化）
             {% endcomment %}
 
             {% if user.is_authenticated %}

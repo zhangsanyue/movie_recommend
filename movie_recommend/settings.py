@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import haystack.backends.whoosh_backend
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
@@ -48,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'movie',
 ]
 
@@ -140,16 +143,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 OAUTH_GITHUB_CONFIG = {
-    'oauth_type_id': 3,  # 对应模型中记录的ID
+    'oauth_type_id': 3,
     'oauth_type': 'Github',
 
     'client_id': 'xxxxxxxxxxx',
     'client_secret': 'xxxxxxxxxx',
-    'redirect_uri': 'http://yshblog.com/oauth/github_check',  # 回调地址
-    'scope': 'user:email',  # 授权的权限
+    'redirect_uri': 'http://yshblog.com/oauth/github_check',
+    'scope': 'user:email',
     'state': 'Github',
 
-    # 其他请求的链接
     'url_authorize': 'https://github.com/login/oauth/authorize',
     'url_access_token': 'https://github.com/login/oauth/access_token',
     'url_open_id': '',
@@ -158,3 +160,10 @@ OAUTH_GITHUB_CONFIG = {
 }
 
 LOGIN_URL = 'movie:login'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': haystack.backends.whoosh_backend.WhooshEngine,
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index')
+    }
+}
