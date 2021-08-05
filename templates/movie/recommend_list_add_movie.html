@@ -1,0 +1,30 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Add Movie To {{ recommend_list.title }}
+{% endblock %}
+
+
+{% block movies_block %}
+    <h1>Recommend Movies</h1>
+{% endblock %}
+
+
+{% block body_block %}
+
+    <form id="recommend_list_add_movie" method="post" action="{% url 'movie:recommend_list_add_movie' recommend_list.slug %}">
+        {% csrf_token %}
+        <input id="type" type="text" list="typelist" placeholder="Movie" name="movie" value="">
+        <datalist id="typelist">
+            {% for choice in  choices%}
+            　　<option>{{ choice }}</option>
+            {% endfor %}
+        </datalist>
+        <input type="submit" name="submit" value="Add Movie" />
+    </form>
+
+{% comment %} 删除推荐列表中的电影 {% endcomment %}
+{% comment %} 修改推荐理由{% endcomment %}
+
+{% endblock %}

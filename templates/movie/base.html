@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>
+            {% block title_block %}
+                Movies
+            {% endblock %}
+        </title>
+    </head>
+
+    <body>
+        <div>
+            <li><a href="{% url 'movie:index' %}">Home</a></li>
+
+            <form action={% url 'movie:search'%} >
+                <input type="text">
+            </form>
+            {% comment %} 
+                这里需要一个搜索框（已有，待优化）
+            {% endcomment %}
+
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'movie:logout' %}">Log Out</a></li>
+                <li><a href="{% url 'movie:me' %}">Me</a></li>
+            {% else %}
+                <li><a href="{% url 'movie:login' %}">Sign In</a></li>
+                <li><a href="{% url 'movie:register' %}">Sign Up</a></li>
+                <li><a href="{% url 'movie:oauth_login' %}">Sign In With Github</a></li>
+            {% endif %}
+        </div>
+    </body>
+
+    <div>
+        {% block movies_block %}
+        {% endblock %}
+        {% if movies %}
+        <ul>
+        {% for movie in movies %}
+            <li>
+                <a href={% url 'movie:show_movie' movie.slug %}>{{ movie.title }}</a>
+                </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    <div>
+        {% block categories_block %}
+        {% endblock %}
+
+        {% if categories %}
+        <ul>
+        {% for category in categories %}
+            <li>
+                <a href={% url 'movie:category' category.slug %}>{{ category.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    {% block body_block %}
+    {% endblock %}
+    
+</html>

@@ -1,0 +1,32 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Me - {{ user.username }}
+{% endblock %}
+
+{% block body_block %}
+    <div>
+        <h2>Personal Info</h2>
+
+        <li>{{ user.username }}</li>
+        <li>{{ user.email }}</li>
+    </div>
+
+    <div>
+        <h2>Recommend Lists</h2>
+        {% if recommend_lists %}
+            {% for recommend_list in  recommend_lists%}
+            <li>
+                <a href={% url 'movie:recommend_list' recommend_list.slug %}>{{ recommend_list.title }}</a>
+            </li>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div>
+        <a href={% url 'movie:recommend_list_add' %}> Add Recommend List </a>
+    </div>
+
+{% endblock %}
+

@@ -1,0 +1,18 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    All Genre
+{% endblock %}
+
+
+{% block categories_block %}
+    <h2>Categories</h2>
+{% endblock %}
+
+
+{% block body_block %}
+    {% if user.is_authenticated %}
+        <a href="{% url 'movie:category_add' %}">Add Genre</a> <br />
+    {% endif %}
+{% endblock %}

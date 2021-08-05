@@ -1,0 +1,39 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    {% if movie %}
+        {{ movie.title }}
+    {% endif %}
+{% endblock %}
+
+
+{% block body_block %}
+    {% if movie %}
+   
+        title-> {{ movie.title }} </br>
+        director-> {{ movie.director }} </br>
+        writers-> {{ movie.writers }} </br>
+        stars-> {{ movie.stars }} </br>
+        storyline-> {{ movie.storyline }} </br>
+        average_star-> {{ movie.average_star }} </br>
+        views = {{ movie.views}}
+
+
+        <h3>Reviews</h3>
+        {% for review in  reviews %}
+            <li>
+                <a href={% url 'movie:other_user_profile' review.user.username %}> {{ review.user.username }} </a>
+                 : {{ review.content }}
+            </li>
+        {% endfor %}
+
+        <form id="movie_review" method="post" action="{% url 'movie:show_movie' movie.slug %}">
+            {% csrf_token %}
+            <input type="text" placeholder="..." name="review" value="">
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+
+    {% endif %}
+{% endblock %}
+
