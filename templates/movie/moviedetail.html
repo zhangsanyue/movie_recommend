@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>detail</title>
+  <link rel="stylesheet" type="text/css" href="../../static/layui-v2.6.8/layui/css/layui.css">
+  <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&sensor=false">
+  </script>
+  <script src="../../static/layui-v2.6.8/layui/layui.js"></script>
+
+
+</head>
+<body>
+
+    
+
+  <ul class="layui-nav" >
+    <li class="layui-nav-item layui-this">
+        <a href="">Home</a>
+    </li>
+    <li class="layui-nav-item">
+      <a href="">Movies</a>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">Ranking List</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">WashList</a>
+      </li>
+  </ul>
+
+  <ul class="layui-nav layui-layout-right">
+    <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+      <a href="javascript:;">
+          {{user.username}}
+      </a>
+      <dl class="layui-nav-child">
+        <dd><a href="">Your Profile</a></dd>
+        <dd><a href="">Settings</a></dd>
+        <dd><a href="">Sign out</a></dd>
+      </dl>
+    </li>
+  </ul>
+
+    <div class="layui-container" style="padding: 10px;">  
+        <div class="layui-row">
+            <div class="layui-col-md9" style="color:turquoise; font-size:xx-large; font-weight: bolder;">
+                PeaEye
+            </div>
+            <div class="layui-col-md3">
+                <div class="layui-input-block">
+                    <form action={% url 'movie:search'%} >
+                    <input type="text"  class="layui-input" placeholder="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 12px;padding-bottom: 12px; padding-left: 45px;font-size: x-large; background-color: lightgrey;font-weight: bolder; ">
+        <h3>Movie Detail</h2>
+    </div>
+
+    <div class="movie_detail" >
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                <img src="../../static/images/rango.jpg" alt="">
+            </div>
+            <div class="layui-col-md8" style="padding-top: 30px;">
+              <div class="movie_content">
+                {% if movie %}
+                <div class="movieName">title-> {{ movie.title }} </br></div>
+                <div id="movieScore"></div>
+                <div class="movieInfo">
+                    director-> {{ movie.director }} </br>
+                    writers-> {{ movie.writers }} </br>
+                    stars-> {{ movie.stars }} </br>
+                    storyline-> {{ movie.storyline }} </br>
+                    average_star-> {{ movie.average_star }} </br>
+                    views = {{ movie.views}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+    
+    </div>
+
+    <script>
+    layui.use('rate', function(){
+      var rate = layui.rate;
+      var ins1 = rate.render({
+        elem: '#movieScore' 
+        ,value: 2
+      });
+
+      var ins2 = rate.render({
+        elem: '#YourMovieScore' 
+      });
+    });
+
+    layui.use('element', function(){
+      var element = layui.element; 
+      element.on('nav(demo)', function(elem){
+      //console.log(elem)
+      layer.msg(elem.text());
+    });
+    });
+
+    </script>
+
+    <div class="review" style="font-weight: bolder;font-size: x-large;padding-left: 30px;">
+        <h3>User Review</h3></div>
+
+    <div style="padding-left: 30px;padding-right: 30px;">
+        <h2>username:</h2>
+        <blockquote class="layui-elem-quote">影评1</blockquote>
+        <h2>username</h2>
+        <blockquote class="layui-elem-quote">影评2</blockquote>
+        <blockquote class="layui-elem-quote">影评3</blockquote>
+    </div>
+
+    <div class="yourReview" style="padding-left: 30px;padding-top: 18px; font-weight: bolder;padding-bottom: 18px;">
+        <h2>Write Your Review</h2></div>
+
+    <div id="YourMovieScore" style="padding-left: 30px;"></div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label"><h3 style="color:springgreen; font-weight: bolder;">Reviews</h3></label>
+        <div class="layui-input-block">
+          <textarea name="desc" placeholder="please input review" class="layui-textarea"></textarea>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+          <button class="layui-btn" lay-submit lay-filter="formDemo">submit review</button>
+          <button type="reset" class="layui-btn layui-btn-primary">reset review</button>
+        </div>
+      </div>
+
+
+
+  
+  <style>
+
+    .layui-col-md4 img {
+    width: 250px;
+    height: 350px;
+    opacity: 0.8;
+    margin: 50px;
+    }
+
+    .movie_content{
+        padding: 30px;
+        width: 750px;
+        height: 450px;
+        margin: 0 auto; 
+        font-size: 30px; 
+        background-color: oldlace;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Movies
+{% endblock %}
+
+{% block movies_block %}
+    <h2>Most Viewed Movies</h2>
+{% endblock %}
+
+
+{% block categories_block %}
+    <h2>Most Viewed Categories</h2>
+{% endblock %}
+
+{% block body_block %}
+    <h2>
+        <a href={% url 'movie:categories' %}>All Genres</a>
+    </h2>
+{% endblock %}

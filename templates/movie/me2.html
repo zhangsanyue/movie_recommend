@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>profile</title>
+  <link rel="stylesheet" type="text/css" href="../../static/layui-v2.6.8/layui/css/layui.css">
+  <script src="../../static/layui-v2.6.8/layui/layui.js"></script>
+</head>
+<body>
+
+    
+
+  <ul class="layui-nav" >
+    <li class="layui-nav-item layui-this">
+        <a href="">Home</a>
+    </li>
+    <li class="layui-nav-item">
+      <a href="">Movies</a>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">Ranking List</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">WashList</a>
+      </li>
+  </ul>
+
+  <ul class="layui-nav layui-layout-right">
+    <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+      <a href="javascript:;">
+        {{user.username}}
+      </a>
+      <dl class="layui-nav-child">
+        <dd><a href="">Your Profile</a></dd>
+        <dd><a href="">Settings</a></dd>
+        <dd><a href="">Sign out</a></dd>
+      </dl>
+    </li>
+  </ul>
+
+    <div class="layui-container" style="padding: 10px;">  
+        <div class="layui-row">
+            <div class="layui-col-md9" style="color:turquoise; font-size:xx-large; font-weight: bolder;">
+                PeaEye
+            </div>
+            <div class="layui-col-md3">
+                <div class="layui-input-block">
+                    <form action={% url 'movie:search'%} >
+                    <input type="text"  class="layui-input" placeholder="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 12px;padding-bottom: 12px; padding-left: 45px;font-size: x-large; background-color: lightgrey;font-weight: bolder; ">
+        <h3>Movie Detail</h2>
+    </div>
+
+    <div class="profile_detail" >
+        <div class="layui-row">
+            <div class="layui-col-md3">
+                <img src="../../static/images/rango.jpg" alt="">
+                <div class="btndiv">
+                    <button type="button" class="layui-btn" id="test1">
+                        <i class="layui-icon">&#xe67c;</i>upload picture
+                      </button>
+                </div>
+                
+                   
+          
+                <script>
+                  layui.use('upload', function(){
+                    var upload = layui.upload;
+                    var uploadInst = upload.render({
+                      elem: '#test1' 
+                      ,url: '/upload/' 
+                      ,done: function(res){
+                      }
+                      ,error: function(){
+                      }
+                    });
+                  });
+
+                  layui.use('element', function(){
+                  var element = layui.element; 
+                  element.on('nav(demo)', function(elem){
+                  layer.msg(elem.text());
+                  });
+                  });
+
+                </script>
+            </div>
+            <div class="layui-col-md9" style="padding-top: 30px;">
+              <div class="profile_content">
+                <div class="personinfo" style="padding-left: 15px;">
+                    <h2>Personal Info</h2>
+            
+                    <li>{{ user.username }}</li>
+                    <li>{{ user.email }}</li>
+                </div>
+                
+                <div id="infoForm" style="padding-top: 20px;">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">单行输入框</label>
+                            <div class="layui-input-block">
+                              <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                            </div>
+                          </div>
+                          <div class="layui-form-item">
+                            <label class="layui-form-label">验证必填项</label>
+                            <div class="layui-input-block">
+                              <input type="text" name="username" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" placeholder="请输入" autocomplete="off" class="layui-input">
+                            </div>
+                          </div>
+                          
+                          <div class="layui-form-item">
+                            <div class="layui-inline">
+                              <label class="layui-form-label">验证手机</label>
+                              <div class="layui-input-inline">
+                                <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                              </div>
+                            </div>
+                            <div class="layui-inline">
+                              <label class="layui-form-label">验证邮箱</label>
+                              <div class="layui-input-inline">
+                                <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                              </div>
+                            </div>
+                          </div>
+
+                    </form>
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+        <div class="viewMovie">
+            <h1 style="font-weight: bolder; padding-left: 30px;">Wish List</h1>
+            <ul>
+                <li>
+                    <a href={% url 'movie:show_movie' movie.slug %}>
+                        <img src="../../static/images/rango.jpg" alt="">
+                        {{ movie.title }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+
+
+
+  
+  <style>
+
+    .layui-col-md3 img {
+    width: 150px;
+    height: 150px;
+    opacity: 0.8;
+    padding-top:30px;
+    padding-left: 68px;
+    }
+
+    .profile_content{
+        padding: 20px;
+        height: 200px;
+        margin: 0 auto;  
+        background-color: white;
+    }
+
+    .btndiv{
+        padding-top: 10px;
+        padding-left: 68px;
+    }
+
+    .viewMovie {
+    width: 1226px;
+    flex-shrink: 0;
+    height: 318px;
+    margin-top: 20px;
+    }
+
+
+    .viewMovie ul {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .viewMovie ul li {
+    width: 234px;
+    height: 280px;
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+
+
+
+    .viewMovie ul li a {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    }
+
+    .viewMovie ul li a img {
+    width: 160px;
+    height: 160px;
+    opacity: 0.8;
+    margin: 37px;
+    }
+  </style>
+</body>
+</html>

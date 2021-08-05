@@ -1,0 +1,25 @@
+{% extends 'movie/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    {{ recommend_list.title }}
+{% endblock %}
+
+{% block movies_block %}
+    <h1>Recommend Movies</h1>
+{% endblock %}
+
+{% block body_block %}
+    {% if recommend_list %}
+        <h3>Why I recommend you this: {{ recommend_list.content }}</h3>
+    {% endif %}
+
+
+    {% if  recommend_list%}
+        {% if user.is_authenticated %}
+            {% if user == recommend_list.user %}
+                <a href={% url 'movie:recommend_list_add_movie' recommend_list.slug %}> Edit </a> <br />
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endblock %}
