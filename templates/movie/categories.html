@@ -1,18 +1,32 @@
-{% extends 'movie/base.html' %}
+{% extends 'movie/base_v.html' %}
 {% load staticfiles %}
 
 {% block title_block %}
-    All Genre
+    All Categories
 {% endblock %}
 
 
-{% block categories_block %}
-    <h2>Categories</h2>
-{% endblock %}
-
-
-{% block body_block %}
+{% block categories_title_block %}
+    <h1>
+        Categories
+    </h1>
     {% if user.is_authenticated %}
-        <a href="{% url 'movie:category_add' %}">Add Genre</a> <br />
+        <a href="{% url 'movie:category_add' %}"><h2>Add Category</h2></a>
     {% endif %}
+{% endblock %}
+
+
+{% block categories_info_block %}
+    {% for category in categories %}
+        <li>
+            <a class="category-link" href={% url 'movie:category' category.slug %}>
+                <img class="category-img" src="../../static/images/rango.jpg" alt="">
+                <div class="category-info">
+                    <h1>{{ category.name }}</h1> </br>
+                    <h1>Likes:{{ category.likes }}</h1> </br>
+                    <h1>Views:{{ category.views }}</h1> </br>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
 {% endblock %}

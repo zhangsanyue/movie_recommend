@@ -24,7 +24,7 @@ def search(request):
 
 
 def categories(request):
-    category_list = Category.objects.order_by('-views')[:5]
+    category_list = Category.objects.order_by('-views')
     context_dict = {'categories': category_list}
     return render(request, 'movie/categories.html', context=context_dict)
 
@@ -86,8 +86,12 @@ def movie_add(request, category_name_slug):
 def show_movie(request, movie_name_slug):
     if request.method == 'POST':
         try:
+            # desc = request.POST.get('desc')
+            # star = request.POST.get('star')
+            # print(desc)
+            # print(star)
             movie = Movie.objects.filter(slug=movie_name_slug)[0]
-            review_content = request.POST.get('review')
+            review_content = request.POST.get('desc')
             review = Review.objects.get_or_create(user=request.user, movie=movie)[0]
             review.content = review_content
             review.save()

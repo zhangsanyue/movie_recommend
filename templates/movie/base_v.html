@@ -6,18 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
         <title>
         {% block title_block %}
             PeaEye
         {% endblock %}
         </title>
 
-    <link rel="stylesheet" type="text/css" href={% static 'layui-v2.6.8/layui/css/layui.css' %} >
-    <script src={% static 'layui-v2.6.8/layui/layui.js' %}></script>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&sensor=false">
-    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'layui-v2.6.8/layui/css/layui.css' %}" >
+    <script src="{% static 'layui-v2.6.8/layui/layui.js' %}"></script>
+    
 
         <script>
                 layui.use('element', function(){
@@ -49,7 +46,7 @@
                 <a href={% url 'movie:index' %}>Home</a>
             </li>
             <li class="layui-nav-item">
-            <a href={% url 'movie:categories' %}>Categories</a>
+            <a href="{% url 'movie:categories' %}">Categories</a>
             </li>
 
             {% if user.is_authenticated %}
@@ -113,8 +110,15 @@
                         {% for movie in movies %}
                         <li>
                             <a class="movie-link" href={% url 'movie:show_movie' movie.slug %}>
-                                <img src={% static 'images/rango.jpg' %} alt="">
-                                <h3>{{ movie.title }}</h3>
+
+                                <div class="movie-img">
+                                    {% comment %} <img src="../../static/images/rango.jpg" alt=""> {% endcomment %}
+                                    <img src={% static 'images/rango.jpg' %} alt="">
+                                </div>
+                                <div class="movie-info">
+                                    <h1><strong>{{ movie.title }}</strong></h1></br>
+                                    <h1>{{ movie.storyline }}</h1>   
+                                </div>
                             </a>
 
                         </li>
@@ -123,102 +127,95 @@
                 </div>
             {% endif %}
 
-            {% comment %} categories block {% endcomment %}
             {% if categories %}
             <div class="viewMovie">
-                <h1 class="category-title">
-                    {% block categories_block %}
+
+                <h1 class="movie-title">
+                    {% block categories_title_block %}
                     {% endblock %}
                 </h1>
 
                 <ul>
-                {% for category in categories %}
-                    <li>
-                        <a class="movie-link" href={% url 'movie:category' category.slug %}>
-                            <img src="../../static/images/rango.jpg" alt="">
-                            <h3>
-                                {{ category.name }}
-                            </h3>
-                        </a>
-                    </li>
-                {% endfor %}
+                    {% block categories_info_block %}
+                    {% endblock %}
                 </ul>
             </div>
             {% endif %}
+
         </div>
     {% endif %}
 
-
-    {% block body_block %}
-    {% endblock %}
+    <div class="body_block">
+        {% block body_block %}
+        {% endblock %}   
+    </div>
 
 
     <style>
 
-
-
-    body{
-        background-color: #fafafa;;
+    .body_block{
+        background-color: lightgrey;
+        text-align: center;
     }
 
     .viewMovie {
-            width: 90%;
+            width: auto;
             flex-shrink: 0;
-            height: 420px;
             margin-top: 20px;
-            margin-left: 5%;
     }
 
     .viewMovie ul {
-        display: flex;
+        /*display: flex;*/
         justify-content: space-between;
     }
 
     .viewMovie ul li {
+        margin-left: 15%;
         margin-top: 2px;
-        width: 234px;
-        height: 390px;
+        width: 70%;
+        height: 250px;
         background-color: #fafafa;
         border-radius: 2px;
     }
 
-    .viewMovie ul li a {
-        display: block;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .movie-img {
-        width: 234px;
+    .movie-img img{
+        margin-top: 2%;
+        margin-left: 3%;
+        width: auto;
+        height: 220px;
         float: left;
     }
 
+    .movie-title {
+
+        text-align: left;
+        margin-left: 15%;
+        float: left;
+    }
 
     .movie-info {
-        margin-top: 40px;
+        margin-left: 4%;
+        margin-top: 50px;
         text-align: left;
         float: left;
         width: 766px;
     }
 
-/*    .viewMovie ul li a img {
-        width: 100%;
-        height: 160px;
-        opacity: 0.8;
-        margin: 37px;
-    }*/
-
-    .movie-link img{
-        width: 100%;
+    .category-img {
+        margin-top: 2%;
+        margin-left: 7%;
+        width: auto;
+        height: 220px;
+        float: left;
     }
 
-    .movie-link h3{
-        width: 100%;
-        margin-top: 5%;
-        text-align: center;
+    .category-info {
+        margin-top: 7%;
+        margin-left: 10%;
+        float: left;
     }
 
-
+    .viewMovie 
     </style>
     </body>
 </html>

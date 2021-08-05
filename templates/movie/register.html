@@ -1,23 +1,198 @@
-{% extends 'movie/base.html' %}
-{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <link rel="stylesheet" type="text/css" href="../../static/layui-v2.6.8/layui/css/layui.css">
+    <script src="../../static/layui-v2.6.8/layui/layui.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="layui-fluid" style="background-color: white; padding-left: 50px; font-size: xx-large;">
+        <h1 style="color: turquoise;">PeaEye</h1>
+    </div>
+    
+    <div class="layui-container:auto" > 
+        <div class="layui-row">
+          <div class="layui-col-md6">
+            <div class="layui-carousel" id="test1" lay-filter="test1">
+                <div carousel-item="">
+                  <div class="postimg"><img src="../../static/images/Black_Widow_(2021_film)_poster.jpg" alt=""></div>
+                  <div class="postimg"><img src="../../static/images/Jurassic.jpg" alt=""></div>
+                  <div class="postimg"><img src="../../static/images/The_Suicide_Squad_poster.jpg" alt=""></div>
+                </div>
+              </div> 
+          </div>
+          <div class="layui-col-md6">
+            <div class="login_center">
+                <div class="login_top">
+                    <div class="left">SIGN UP</div>
+                    <div class="right">Already have an account?<a href="login.html" target="_self">Login in here</a></div>
+                    <div class="clear"></div>
+                    <div class="under-line center"></div>
+                </div>
 
-{% block title_block %}
-    Register
-{% endblock %}
+                {% if registered %}
+                <div><strong>thank you for registering!</strong></div>
+                <div><a href="{% url 'movie:index' %}">Return to the homepage.</a><br /></div>
+                
+                {% else %}
+                <form id="register_form" method="post" action="{% url 'movie:register' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="register_main center">
+                        <div class="register-info">
+                            Username:&nbsp;<input class="register-info-input" type="text" name="username"
+                                                                 id="loginName"
+                                                                 placeholder="please input your username"/>
+                        </div>
+                        <div class="register-info">
+                            E-mail&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="register-info-input" type="text" name="email"
+                                                                 id="email"
+                                                                 placeholder="please input your Email"/>
+                        </div>
+                        <div class="register-info">
+                            Password:&nbsp;&nbsp;<input class="register-info-input"
+                                                                                        id="password"
+                                                                                        type="password"
+                                                                                        name="password"
+                                                                                        placeholder="please input your password"/>
+                        </div>
+
+                        <div class="layui-btn-container">
+
+                            <input type="submit" class="layui-btn" value="submit">Submit</input>
+        
+                        </div>
+                       
+                    </div>
+                </form>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
 
 
-{% block body_block %}
-    <h1>Register for movie</h1>
-    {% if registered %}
-        movie says: <strong>thank you for registering!</strong>
-        <a href="{% url 'movie:index' %}">Return to the homepage.</a><br />
-    {% else %}
-        movie says: <strong>register here!</strong><br />
-        <form id="user_form" method="post" action="{% url 'movie:register' %}" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ user_form.as_p }}
-            {{ profile_form.as_p }}
-            <input type="submit" name="submit" value="Register" />
-        </form>
-    {% endif %}
-{% endblock %}
+</body>
+
+<style>
+    body{ margin: 0 ;
+        background-color:#14212a}
+
+
+    .postimg img{
+        height: 700px;
+    }
+
+    .layui-col-md6{
+        padding-left: 155px;
+        padding-right: 167px;
+        padding-top: 10px;
+    }
+
+
+
+    .login_center {
+        width: 360px;
+        margin: 10px auto;
+        padding: 30px 0;
+        font-size: xx-large;
+        font-weight: bolder;
+        color: white;
+        background-color:grey;
+        border-radius: 20px;
+        padding-left: 20px;
+    }
+
+
+
+    .login_top {
+    margin: 10px 0;
+    }
+
+    .left {
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    }
+
+    .right {
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+    .right a {
+    color: #1baeae;
+    font-weight: bold;
+    }
+
+    .right a:hover {
+    color: #1baeae;
+    }
+
+    .under-line {
+    height: 2px;
+    background: #1baeae;
+    margin: 8px 0;
+}
+
+    .register_main {
+    padding: 5px 0;
+    }
+
+    .register_main input:focus {
+    border: 1px solid #1baeae;
+    }
+
+    .register-info {
+    font: 18px Times New Roman;
+    font-weight: bolder;
+    height: 40px;
+    line-height: 40px;
+    margin: 35px 0;
+    }
+
+    .register-info .register-info-input {
+    width: 220px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.layui-btn {
+    border: none;
+    width: 240px;
+    height: 45px;
+    margin-left: 55px;
+    background: #1baeae;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+</style>
+
+<script>
+    layui.use('carousel', function(){
+      var carousel = layui.carousel;
+      //建造实例
+      carousel.render({
+        elem: '#test1'
+        ,width: '100%' 
+        ,height: '480px'
+        ,arrow: 'always' 
+        ,indicator:'outside'
+ 
+      });
+    });
+    </script>
+
+</html>
+

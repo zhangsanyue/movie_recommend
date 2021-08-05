@@ -8,7 +8,6 @@ from movie.models import *
 
 
 def populate():
-
     with open('data.json', 'r', encoding='utf-8') as f:
         categories = json.load(f)
 
@@ -25,6 +24,7 @@ def populate():
                 movie["views"],
                 movie["writers"]
             )
+
 
 def movie_add(cat, average_star, director, likes, stars, storyline, title, views, writers):
     movie = None
@@ -62,6 +62,7 @@ def add_cat(name, views=0, likes=0):
     except:
         pass
     return c
+
 
 if __name__ == '__main__':
     print('Starting movie population script...')

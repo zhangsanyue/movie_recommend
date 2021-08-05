@@ -1,6 +1,7 @@
 {% extends 'movie/base.html' %}
 {% load staticfiles %}
 
+
 {% block title_block %}
     {% if movie %}
         {{ movie.title }}
@@ -9,31 +10,123 @@
 
 
 {% block body_block %}
-    {% if movie %}
-   
-        title-> {{ movie.title }} </br>
-        director-> {{ movie.director }} </br>
-        writers-> {{ movie.writers }} </br>
-        stars-> {{ movie.stars }} </br>
-        storyline-> {{ movie.storyline }} </br>
-        average_star-> {{ movie.average_star }} </br>
-        views = {{ movie.views}}
+
+    <div class="movie-detail">
+<div style="padding-top: 12px;padding-bottom: 12px; padding-left: 45px;font-size: x-large; background-color: lightgrey;font-weight: bolder; ">
+        <h3>Movie Detail</h2>
+    </div>
+
+    <div class="movie_detail" >
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                {% comment %} <img src="../../static/images/rango.jpg" alt=""> {% endcomment %}
+                <img src={% static 'images/rango.jpg' %} alt="">
+            </div>
+            <div class="layui-col-md8" style="padding-top: 30px;">
+              <div class="movie_content">
+                {% if movie %}
+
+                    <div class="movieName">
+                        {% if movie.title %}<h1>{{ movie.title }}</h1> </br>{% endif %}
+                    </div>
+
+                    <div id="movieScore"></div>
+
+                    <div class="movieInfo">
+                        {% if movie.director %}<h3>Director: {{ movie.director }}</h3></br>{% endif %}
+                        {% if movie.writers %}<h3>Writers: {{ movie.writers }}</h3></br>{% endif %}
+                        {% if movie.stars %}<h3>Stars: {{ movie.stars }}</h3></br>{% endif %}
+                        {% if movie.storyline %}<h3>Storyline: {{ movie.storyline }}</h3></br>{% endif %}
+                    </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+    </div>
 
 
-        <h3>Reviews</h3>
-        {% for review in  reviews %}
-            <li>
-                <a href={% url 'movie:other_user_profile' review.user.username %}> {{ review.user.username }} </a>
-                 : {{ review.content }}
-            </li>
+    <script>
+        layui.use('rate', function(){
+            var rate = layui.rate;
+            var ins1 = rate.render({
+                elem: '#movieScore' ,
+                value: {{movie.average_star}}
+            });
+
+            var ins2 = rate.render({
+                elem: '#YourMovieScore' 
+            });
+        });
+
+        layui.use('element', function(){
+            var element = layui.element; 
+            element.on('nav(demo)', function(elem){
+                console.log(elem)
+                layer.msg(elem.text());
+            });
+        });
+    </script>
+
+
+    {% if reviews %}
+    <div class="review" style="font-weight: bolder;font-size: x-large;padding-left: 30px;">
+        <h3>User Review</h3></div>
+
+    <div style="padding-left: 30px;padding-right: 30px;">
+        {% for review in reviews %}
+            <h2>{{review.user.username}}</h2>
+            <blockquote class="layui-elem-quote">{{review.content}}</blockquote>
         {% endfor %}
-
-        <form id="movie_review" method="post" action="{% url 'movie:show_movie' movie.slug %}">
-            {% csrf_token %}
-            <input type="text" placeholder="..." name="review" value="">
-            <input type="submit" name="submit" value="Submit" />
-        </form>
-
+    </div>
     {% endif %}
+
+
+
+    <div class="yourReview" style="padding-left: 30px;padding-top: 18px; font-weight: bolder;padding-bottom: 18px;">
+        <h2>Write Your Review</h2>
+    </div>
+
+    <form id="add_review" method="post" action="{% url 'movie:show_movie' movie.slug %}">
+        {% csrf_token %}
+        <div id="YourMovieScore" name="star" style="padding-left: 30px;"></div>
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label"><h3 style="color:springgreen; font-weight: bolder;">Reviews</h3></label>
+            <div class="layui-input-block">
+                <textarea name="desc" placeholder="please input review" class="layui-textarea"></textarea>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <style>
+        .movie-detail{
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .layui-col-md4 img {
+            width: 250px;
+            height: 350px;
+            opacity: 0.8;
+            margin: 50px;
+        }
+
+        .movie_content{
+            padding: 30px;
+            width: 750px;
+            height: auto;
+            margin: 0 auto; 
+            font-size: 30px; 
+            background-color: oldlace;
+        }
+    </style>
+
 {% endblock %}
 

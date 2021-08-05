@@ -5,28 +5,65 @@
     Me - {{ user.username }}
 {% endblock %}
 
+
+
 {% block body_block %}
-    <div>
-        <h2>Personal Info</h2>
 
-        <li>{{ user.username }}</li>
-        <li>{{ user.email }}</li>
-    </div>
+    <div class="recommend-list-body">
+        <div class="rl-title">
+            <h1>
+                Recommend List
+            </h1>
+            {% if user.is_authenticated %}
+                <a href="{% url 'movie:recommend_list_add' %}"><h2>Add Recommend List</h2></a>
+            {% endif %}
+        </div>
 
-    <div>
-        <h2>Recommend Lists</h2>
-        {% if recommend_lists %}
-            {% for recommend_list in  recommend_lists%}
-            <li>
-                <a href={% url 'movie:recommend_list' recommend_list.slug %}>{{ recommend_list.title }}</a>
-            </li>
-            {% endfor %}
-        {% endif %}
-    </div>
 
-    <div>
-        <a href={% url 'movie:recommend_list_add' %}> Add Recommend List </a>
+        <div class="rls">
+
+
+                {% for recommend_list in recommend_lists %}
+                    <li class="rl">
+                        <a class="rl-link" href="{% url 'movie:recommend_list' recommend_list.slug %}">
+                            <div class="rl-info">
+                                <h1>{{ recommend_list.title }}</h1> </br>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}     
+
+        </div>
     </div>
+   
+
+
+
+
+    <style >
+
+    .recommend-list-body {
+        background-color: lightgrey;
+        height: 1000px;
+    }
+
+    .rl-title {
+        margin-left: 5%;
+
+    }
+
+    .rls{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .rl {
+        margin-top: 2px;
+        background-color: #fafafa;
+    }
+
+    </style>
 
 {% endblock %}
 
