@@ -49,9 +49,12 @@ def category(request, category_name_slug):
 def category_add(request):
     form = CategoryForm()
     if request.method == 'POST':
+
         form = CategoryForm(request.POST)
         if form.is_valid():
-            form.save(commit=True)
+            if 'image' in request.FILES:
+                form.image = request.FILES['image']
+            form.save()
             return redirect('/movie/')
     else:
         print(form.errors)

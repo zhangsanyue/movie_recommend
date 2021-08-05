@@ -10,6 +10,7 @@ class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
+    image = models.ImageField(upload_to='category_images', blank=True)
     slug = models.SlugField(unique=True)
 
     def save(self, *args, **kwargs):

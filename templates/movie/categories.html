@@ -17,10 +17,13 @@
 
 
 {% block categories_info_block %}
+
+
     {% for category in categories %}
         <li>
             <a class="category-link" href={% url 'movie:category' category.slug %}>
-                <img class="category-img" src="../../static/images/rango.jpg" alt="">
+                {% comment %} <img class="category-img" src="../../static/images/rango.jpg" alt=""> {% endcomment %}
+                <img class="category-img" src="{{MEDIA_URL}}{{category.image}}" alt="">
                 <div class="category-info">
                     <h1>{{ category.name }}</h1> </br>
                     <h1>Likes:{{ category.likes }}</h1> </br>
@@ -30,3 +33,10 @@
         </li>
     {% endfor %}
 {% endblock %}
+
+
+{% block body_block %}
+    {% if user.is_authenticated %}
+        <a href="{% url 'movie:category_add' %}"><h2>Add Category</h2></a>
+    {% endif %}
+{% endblock %}   
