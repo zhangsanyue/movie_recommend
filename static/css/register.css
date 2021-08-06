@@ -3,7 +3,8 @@ body{ margin: 0 ;
 
 
 .postimg img{
-    height: 480px;
+    width: 100%;
+    height: 110%;
 }
 
 .layui-col-md6{
