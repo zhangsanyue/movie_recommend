@@ -1,6 +1,7 @@
 {% extends 'movie/base.html' %}
 {% load staticfiles %}
 
+
 {% block title_block %}
     Me - {{ user.username }}
 {% endblock %}
@@ -8,6 +9,7 @@
 
 
 {% block body_block %}
+
     <div class="profilebody">
         <div class="personinfo">  
             <img src="../../static/images/profile.jpg" alt="">
@@ -48,49 +50,6 @@
 
 
 
-
-    <style >
-    .profilebody{
-        display: flex;
-        width: 100%;
-        padding: 5px;
-    }
-
-    .personinfo{
-        background-color: lightgrey;
-        text-align: center;
-    }
-
-    .personinfo img{
-        width: 95%;
-        padding: 2.5%;
-        margin-bottom: 20px;
-    }
-
-    .recommend-list-body {
-        padding: 5px;
-        background-color: lightgrey;
-        height: 500px;
-        width: 88%;
-    }
-
-    .rl-title {
-        margin-left: 5%;
-
-    }
-
-    .rls{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-
-    .rl {
-        margin-top: 2px;
-        background-color: #fafafa;
-    }
-
-    </style>
 
 {% endblock %}
 

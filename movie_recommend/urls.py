@@ -19,13 +19,11 @@ from django.urls.conf import include
 from movie import views
 from django.conf import settings
 from django.conf.urls.static import static
-from haystack import views as v
+# from haystack import views as v
 
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('movie/', include('movie.urls')),
     path('admin/', admin.site.urls),
-    #path('search/', include('haystack.urls')),
-    path('search/', v.SearchView(), name='haystack_search'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -22,19 +22,14 @@ def index(request):
 
 
 def search(request):
-    # TODO 没有匹配，返回了所有电影
-    # movie_list = Movie.objects.order_by('-views')
     movie_list = []
-
     if request.method == 'POST':
-        search_aim = request.POST.get("search")
+        search_aim = request.POST.get("search").lower()
         for movie in Movie.objects.all():
-            if string_similar(movie.title, search_aim) > 0.5:
+            if string_similar(movie.title.lower(), search_aim) > 0.7:
                 movie_list.append(movie)
-            elif search_aim in movie.title:
+            elif search_aim in movie.title.lower():
                 movie_list.append(movie)
-
-    # movie_list.append(Movie.objects.get(slug="breaking-bad"))
 
     context_dict = {'movies': movie_list}
     return render(request, 'movie/search.html', context=context_dict)
