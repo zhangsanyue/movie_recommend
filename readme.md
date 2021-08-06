@@ -1,3 +1,21 @@
+# Notice
+This code do not contain database. IF you want to run, please follow:
+```shell
+python manage.py makemigrations movie
+python manage.py migrate
+```
+Add super user: you need enter some information
+```shell
+python manage.py createsuperuser
+```
+
+Use this command add test data
+```
+python populate_rango.py
+```
+
+
+
 # PeaEye
 
 This is a team work for class of Internet Technology In Computing in University of Glasgow.
