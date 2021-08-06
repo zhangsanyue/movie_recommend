@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import haystack.backends.whoosh_backend
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
@@ -38,7 +39,6 @@ SECRET_KEY = 'd655p3)(bet+__!gimh4(1d@6756wxymu3et$ru#k@u-8j%s9+'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -65,7 +65,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'movie_recommend.urls'
 
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -85,7 +84,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'movie_recommend.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -95,7 +93,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -114,7 +111,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # PASSWORD_HASHERS = (
 # 'django.contrib.auth.hashers.PBKDF2PasswordHasher',
@@ -135,18 +131,18 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
-
 LOGIN_URL = 'movie:login'
 
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': haystack.backends.whoosh_backend.WhooshEngine,
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
         'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index')
     }
 }
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

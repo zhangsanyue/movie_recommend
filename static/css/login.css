@@ -1,0 +1,99 @@
+body{ margin: 0 ;
+    background-color:#14212a
+}
+
+
+.postimg img{
+    height: 480px;
+}
+
+.layui-col-md6{
+    padding-left: 155px;
+    padding-right: 167px;
+    padding-top: 10px;
+}
+
+
+
+.login_center {
+    width: 360px;
+    margin: 10px auto;
+    padding: 30px 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color:grey;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+
+.login_top {
+margin: 10px 0;
+}
+
+.left {
+height: 40px;
+line-height: 40px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.right {
+height: 40px;
+line-height: 40px;
+font-size: 13px;
+}
+
+.right a {
+color: #1baeae;
+font-weight: bold;
+}
+
+.right a:hover {
+color: #1baeae;
+}
+
+.under-line {
+height: 2px;
+background: #1baeae;
+margin: 8px 0;
+}
+
+.login_main {
+padding: 5px 0;
+}
+
+.login_main input:focus {
+border: 1px solid #1baeae;
+}
+
+.login-info {
+font: 18px Times New Roman;
+font-weight: bolder;
+height: 40px;
+line-height: 40px;
+margin: 35px 0;
+}
+
+.login-info .login-info-input {
+width: 220px;
+height: 30px;
+border: 1px solid #ccc;
+padding: 5px 10px;
+}
+
+.layui-btn {
+border: none;
+width: 240px;
+height: 45px;
+margin-left: 55px;
+background: #1baeae;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+cursor: pointer;
+border-radius: 4px;
+}

@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href={% static 'layui-v2.6.8/layui/css/layui.css' %} >
     <link rel="stylesheet" type="text/css" href={% static 'css/base.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/me.css' %}>
     <script src={% static 'layui-v2.6.8/layui/layui.js' %}></script>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&sensor=false">
@@ -69,8 +70,9 @@
                 </div>
                 <div class="layui-col-md3">
                     <div class="layui-input-block">
-                        <form action={% url 'movie:search'%} >
-                        <input type="text"  class="layui-input" placeholder="search">
+                        <form method='get' action="{% url 'haystack_search' %}" target="_blank">
+                            <input type="text" name="q">
+                            <input type="submit" value="search">
                         </form>
                     </div>
                 </div>
