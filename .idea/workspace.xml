@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c4d15dcc-19a4-4efb-af5a-2b5a1986699f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/movie_recommend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movie_recommend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/search_indexes.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/search_indexes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_recommend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_recommend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_recommend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_recommend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +50,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/search/indexes" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a'su's\Workspace\tango_with_django_project\templates\search" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\a'su's\Workspace\tango_with_django_project\templates\search\indexes" />
       <recent name="D:\movie\movie_recommend\templates" />
       <recent name="D:\movie\movie_recommend\movie" />
       <recent name="D:\movie\movie_recommend" />

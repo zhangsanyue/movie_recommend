@@ -89,8 +89,9 @@
                 </div>
                 <div class="layui-col-md3">
                     <div class="layui-input-block">
-                        <form action={% url 'movie:search'%} >
-                        <input type="text"  class="layui-input" placeholder="search">
+                        <form method='get' action="{% url 'haystack_search' %}" target="_blank">
+                            <input type="text" name="q">
+                            <input type="submit" value="search">
                         </form>
                     </div>
                 </div>
