@@ -1,3 +1,10 @@
+'''
+This file are used to add test data, which can add about 100 movies to database. 
+We also add a data.json file which contain the movies information. The views , 
+likes and average_star are rondomly generated. 
+'''
+
+
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movie_recommend.settings')
 

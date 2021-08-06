@@ -9,10 +9,12 @@ from django.contrib.auth.decorators import login_required
 from datetime import datetime
 import difflib
 
+
 def string_similar(s1, s2):
     return difflib.SequenceMatcher(None, s1, s2).quick_ratio()
 
 
+# home page
 def index(request):
     category_list = Category.objects.order_by('-views')[:5]
     movie_list = Movie.objects.order_by('-views')[:5]
@@ -21,6 +23,7 @@ def index(request):
     return render(request, 'movie/index.html', context=context_dict)
 
 
+# In this method, we use haystack to query matching movies.
 def search(request):
     movie_list = []
     if request.method == 'POST':
@@ -35,12 +38,15 @@ def search(request):
     return render(request, 'movie/search.html', context=context_dict)
 
 
+# show all categories, categories will be sort by views
 def categories(request):
     category_list = Category.objects.order_by('-views')
     context_dict = {'categories': category_list}
     return render(request, 'movie/categories.html', context=context_dict)
 
 
+# show each category, it will list all movies in this category. 
+# it also have a button for user to add new movie to this category
 def category(request, category_name_slug):
     context_dict = {}
     try:
@@ -57,6 +63,7 @@ def category(request, category_name_slug):
     return response
 
 
+# add a new category (default empty)
 @login_required
 def category_add(request):
     form = CategoryForm()
@@ -77,6 +84,7 @@ def category_add(request):
     return render(request, 'movie/category_add.html', {'form': form})
 
 
+# add a new movie (need user input the movie information and up load a picture) the picture 
 @login_required
 def movie_add(request, category_name_slug):
     try:
@@ -113,14 +121,11 @@ def movie_add(request, category_name_slug):
     return render(request, 'movie/movie_add.html', context=context_dict)
 
 
+# show each movie , it will list the movie's title, director, writers, stars. in this page, user can add comment as well.
 @login_required
 def show_movie(request, movie_name_slug):
     if request.method == 'POST':
         try:
-            # desc = request.POST.get('desc')
-            # star = request.POST.get('star')
-            # print(desc)
-            # print(star)
             movie = Movie.objects.filter(slug=movie_name_slug)[0]
             review_content = request.POST.get('desc')
             review = Review.objects.get_or_create(user=request.user, movie=movie)[0]
@@ -143,6 +148,7 @@ def show_movie(request, movie_name_slug):
     return response
 
 
+# this is user's homepage, it show user's personal information
 @login_required
 def me(request):
     recommend_lists = RecommendList.objects.filter(user=request.user)
@@ -150,6 +156,7 @@ def me(request):
     return render(request, 'movie/me.html', context=context_dict)
 
 
+# user can add new recommend list at here
 @login_required
 def recommend_list_add(request):
     form = RecommendListForm()
@@ -169,6 +176,7 @@ def recommend_list_add(request):
     return render(request, 'movie/recommend_list_add.html', {'form': form})
 
 
+# show a user's recommend list. and user can edit their recommend list
 @login_required
 def recommend_list(request, recommend_list_slug):
     context_dict = {}
@@ -186,6 +194,7 @@ def recommend_list(request, recommend_list_slug):
     return response
 
 
+# add a new movie to a recommend list
 @login_required
 def recommend_list_add_movie(request, recommend_list_slug):
     rl = RecommendList.objects.get(slug=recommend_list_slug)
@@ -216,6 +225,7 @@ def recommend_list_add_movie(request, recommend_list_slug):
     return render(request, 'movie/recommend_list_add_movie.html', context=context_dict)
 
 
+# show other user's public information
 def other_user_profile(request, user_name):
     other_user = User.objects.filter(username=user_name)[0]
     other_user_recommend_list = RecommendList.objects.filter(user=other_user)
@@ -228,6 +238,7 @@ def other_user_profile(request, user_name):
     return render(request, 'movie/other_user.html', context=dict_contest)
 
 
+# for new user
 def register(request):
     registered = False
 
@@ -258,6 +269,7 @@ def register(request):
     return render(request, 'movie/register.html', context=dict_contest)
 
 
+# for registed user
 def user_login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -276,16 +288,18 @@ def user_login(request):
         return render(request, 'movie/login.html')
 
 
+# log out
 @login_required
 def user_logout(request):
     logout(request)
     return redirect(reverse('movie:index'))
 
 
+# this method deal with cookie, user view the movie detail will make this movie's views add 1 
 def movie_cookie_handler(request, response, movie):
     movie_last_visit_cookie = request.COOKIES.get('movie_last_visit', str(datetime.now()))
     movie_last_visit_time = datetime.strptime(movie_last_visit_cookie[:-7], '%Y-%m-%d %H:%M:%S')
-    if (datetime.now() - movie_last_visit_time).seconds > 30:  # 时间间隔大于30s，views计数
+    if (datetime.now() - movie_last_visit_time).seconds > 30:
         # add movie views
         movie.views += 1
         movie.save()
@@ -295,10 +309,11 @@ def movie_cookie_handler(request, response, movie):
         response.set_cookie('movie_last_visit', movie_last_visit_cookie)
 
 
+# this method deal with cookie, user view the category  will make this category's views add 1 
 def category_cookie_handler(request, response, category):
     cat_last_visit_cookie = request.COOKIES.get('cat_last_visit', str(datetime.now()))
     cat_last_visit_time = datetime.strptime(cat_last_visit_cookie[:-7], '%Y-%m-%d %H:%M:%S')
-    if (datetime.now() - cat_last_visit_time).seconds > 180:  # 时间间隔大于180s，views计数
+    if (datetime.now() - cat_last_visit_time).seconds > 180:
         # add category views
         category.views += 1
         category.save()
