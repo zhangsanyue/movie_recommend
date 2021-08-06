@@ -20,7 +20,7 @@ python populate_rango.py
 
 This is a team work for class of Internet Technology In Computing in University of Glasgow.
 
-This project based on Rango which contain 2 app (movie and haystack). movie app are used to complete the main structure and  the haystack are used for search.
+This project based on Rango 
 
 All .html file are extends from base.html or base_v.html, except register.html and login.html.
 
