@@ -12,18 +12,10 @@
         {% endblock %}
         </title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'layui-v2.6.8/layui/css/layui.css' %}" >
-    <script src="{% static 'layui-v2.6.8/layui/layui.js' %}"></script>
-    
-
-        <script>
-                layui.use('element', function(){
-                var element = layui.element; 
-                element.on('nav(demo)', function(elem){
-                layer.msg(elem.text());
-                });
-            });
-        </script>
+        <link rel="stylesheet" type="text/css" href={% static 'layui-v2.6.8/layui/css/layui.css' %} >
+        <link rel="stylesheet" type="text/css" href={% static 'css/base_v.css' %}>
+        <script src={% static 'layui-v2.6.8/layui/layui.js' %}></script>
+        <script src={% static 'javascript/base_v.js' %}></script>
     </head>
 
 
@@ -99,7 +91,6 @@
                             <a class="movie-link" href={% url 'movie:show_movie' movie.slug %} style="display: flex;">
 
                                 <div class="movie-img">
-                                    {% comment %}  {% endcomment %}
                                     <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt="">
                                 </div>
                                 <div class="movie-info">
@@ -107,7 +98,6 @@
                                     <h2>{{ movie.storyline }}</h2>   
                                 </div>
                             </a>
-
                         </li>
                         {% endfor %}
                     </ul>
@@ -136,72 +126,6 @@
         {% block body_block %}
         {% endblock %}   
     </div>
-
-
-    <style>
-
-    .body_block{
-        background-color: lightgrey;
-        text-align: center;
-    }
-
-    .viewMovie {
-            width: auto;
-            flex-shrink: 0;
-            margin-top: 20px;
-    }
-
-    .viewMovie ul {
-        /*display: flex;*/
-        justify-content: space-between;
-    }
-
-    .viewMovie ul li {
-        margin-left: 15%;
-        margin-top: 2px;
-        width: 70%;
-        height: 250px;
-        background-color: #fafafa;
-        border-radius: 2px;
-    }
-
-    .movie-img img{
-        margin-top: 10%;
-        margin-left: 3%;
-        width: 150px;
-        height: 220px;
-        float: left;
-    }
-
-    .movie-title {
-
-        text-align: left;
-        margin-left: 15%;
-        float: left;
-    }
-
-    .movie-info {
-        margin-left: 4%;
-        margin-top: 50px;
-        text-align: left;
-        float: left;
-        width: 766px;
-    }
-
-    .category-img {
-        margin-top: 2%;
-        margin-left: 7%;
-        width: auto;
-        height: 220px;
-        float: left;
-    }
-
-    .category-info {
-        margin-top: 7%;
-        margin-left: 10%;
-        float: left;
-    }
-
-    </style>
+    
     </body>
 </html>

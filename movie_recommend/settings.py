@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import haystack.backends.whoosh_backend
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'movie'
 ]
 
@@ -141,3 +143,10 @@ STATIC_URL = '/static/'
 
 
 LOGIN_URL = 'movie:login'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': haystack.backends.whoosh_backend.WhooshEngine,
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index')
+    }
+}

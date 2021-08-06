@@ -12,18 +12,17 @@
 {% block body_block %}
 
     <div class="movie-detail">
-<div style="padding-top: 12px;padding-bottom: 12px; padding-left: 45px;font-size: x-large; background-color: lightgrey;font-weight: bolder; ">
+    <div style="padding-top: 12px;padding-bottom: 12px; padding-left: 45px;font-size: x-large; background-color: lightgrey;font-weight: bolder; ">
         <h3>Movie Detail</h2>
     </div>
 
     <div class="movie_detail" >
         <div class="layui-row">
             <div class="layui-col-md4">
-                {% comment %} <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt=""> {% endcomment %}
                 <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt="">
             </div>
             <div class="layui-col-md8" style="padding-top: 30px;">
-              <div class="movie_content">
+                <div class="movie_content">
                 {% if movie %}
 
                     <div class="movieName">
@@ -39,9 +38,9 @@
                         {% if movie.storyline %}<h3>Storyline: {{ movie.storyline }}</h3></br>{% endif %}
                     </div>
                 {% endif %}
-              </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 
 
@@ -50,8 +49,8 @@
             var rate = layui.rate;
             var ins1 = rate.render({
                 elem: '#movieScore' ,
-                value: {{movie.average_star}}
-                ,readonly: true
+                value: {{movie.average_star}},
+                readonly: true,
             });
 
             var ins2 = rate.render({
@@ -71,7 +70,8 @@
 
     {% if reviews %}
     <div class="review" style="font-weight: bolder;font-size: x-large;padding-left: 30px;">
-        <h3>User Review</h3></div>
+        <h3>User Review</h3>
+    </div>
 
     <div style="padding-left: 30px;padding-right: 30px;">
         {% for review in reviews %}
