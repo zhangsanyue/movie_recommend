@@ -3,8 +3,8 @@ body{ margin: 0 ;
 
 
 .postimg img{
-    height: 100%;
-    width: 110%;
+    width: 100%;
+    height: 110%;
 }
 
 .layui-col-md6{
@@ -12,7 +12,6 @@ body{ margin: 0 ;
     padding-right: 167px;
     padding-top: 10px;
 }
-
 
 
 .login_center {
