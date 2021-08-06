@@ -19,8 +19,8 @@
     <div class="movie_detail" >
         <div class="layui-row">
             <div class="layui-col-md4">
-                {% comment %} <img src="../../static/images/rango.jpg" alt=""> {% endcomment %}
-                <img src={% static 'images/rango.jpg' %} alt="">
+                {% comment %} <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt=""> {% endcomment %}
+                <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt="">
             </div>
             <div class="layui-col-md8" style="padding-top: 30px;">
               <div class="movie_content">
@@ -51,6 +51,7 @@
             var ins1 = rate.render({
                 elem: '#movieScore' ,
                 value: {{movie.average_star}}
+                ,readonly: true
             });
 
             var ins2 = rate.render({
@@ -123,7 +124,7 @@
             width: 750px;
             height: auto;
             margin: 0 auto; 
-            font-size: 30px; 
+            font-size: 22px; 
             background-color: oldlace;
         }
     </style>

@@ -23,19 +23,6 @@
                 layer.msg(elem.text());
                 });
             });
-
-
-            function initialize()
-            {
-                var mapProp = {
-                center:new google.maps.LatLng(55.86549,-4.25409),
-                zoom:15,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-                };
-                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </head>
 
@@ -109,15 +96,15 @@
                     <ul>
                         {% for movie in movies %}
                         <li>
-                            <a class="movie-link" href={% url 'movie:show_movie' movie.slug %}>
+                            <a class="movie-link" href={% url 'movie:show_movie' movie.slug %} style="display: flex;">
 
                                 <div class="movie-img">
-                                    {% comment %} <img src="../../static/images/rango.jpg" alt=""> {% endcomment %}
-                                    <img src={% static 'images/rango.jpg' %} alt="">
+                                    {% comment %}  {% endcomment %}
+                                    <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt="">
                                 </div>
                                 <div class="movie-info">
                                     <h1><strong>{{ movie.title }}</strong></h1></br>
-                                    <h1>{{ movie.storyline }}</h1>   
+                                    <h2>{{ movie.storyline }}</h2>   
                                 </div>
                             </a>
 
@@ -179,9 +166,9 @@
     }
 
     .movie-img img{
-        margin-top: 2%;
+        margin-top: 10%;
         margin-left: 3%;
-        width: auto;
+        width: 150px;
         height: 220px;
         float: left;
     }
@@ -215,7 +202,6 @@
         float: left;
     }
 
-    .viewMovie 
     </style>
     </body>
 </html>
