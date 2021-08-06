@@ -7,6 +7,10 @@ from django.urls import reverse
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from datetime import datetime
+import difflib
+
+def string_similar(s1, s2):
+    return difflib.SequenceMatcher(None, s1, s2).quick_ratio()
 
 
 def index(request):
@@ -19,7 +23,19 @@ def index(request):
 
 def search(request):
     # TODO 没有匹配，返回了所有电影
-    movie_list = Movie.objects.order_by('-views')
+    # movie_list = Movie.objects.order_by('-views')
+    movie_list = []
+
+    if request.method == 'POST':
+        search_aim = request.POST.get("search")
+        for movie in Movie.objects.all():
+            if string_similar(movie.title, search_aim) > 0.5:
+                movie_list.append(movie)
+            elif search_aim in movie.title:
+                movie_list.append(movie)
+
+    # movie_list.append(Movie.objects.get(slug="breaking-bad"))
+
     context_dict = {'movies': movie_list}
     return render(request, 'movie/search.html', context=context_dict)
 

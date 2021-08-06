@@ -65,9 +65,9 @@
                 </div>
                 <div class="layui-col-md3">
                     <div class="layui-input-block">
-                        <form action={% url 'movie:search'%} >
+                        <form method="post" action={% url 'movie:search'%} >
                         {% csrf_token %}
-                        <input type="text"  class="layui-input" placeholder="search">
+                        <input type="text" name="search" class="layui-input" value="" size="50" />
                         </form>
                     </div>
                 </div>
