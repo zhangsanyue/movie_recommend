@@ -1,0 +1,54 @@
+    body{
+        background-color: #fafafa;;
+    }
+
+    .viewMovie {
+            width: 90%;
+            flex-shrink: 0;
+            height: 420px;
+            margin-top: 20px;
+            margin-left: 5%;
+    }
+
+    .viewMovie ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .viewMovie ul li {
+        margin-top: 2px;
+        width: 234px;
+        height: 390px;
+        border-radius: 2px;
+        background-color: #fafafa;
+    }
+
+    .viewMovie ul li a {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .movie-img {
+        width: 230px;
+        height: 250px;
+        float: left;
+    }
+
+
+    .movie-info {
+        margin-top: 40px;
+        text-align: left;
+        float: left;
+    }
+
+    .movie-link img{
+        width: 99%;
+        height: 320px;
+    }
+
+    .movie-link h3{
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
