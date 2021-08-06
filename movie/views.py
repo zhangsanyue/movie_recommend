@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template.defaultfilters import title
 from movie.forms import *
 from django.urls import reverse
 from django.shortcuts import redirect
@@ -50,12 +51,16 @@ def category_add(request):
     form = CategoryForm()
     if request.method == 'POST':
 
-        form = CategoryForm(request.POST)
+        form = CategoryForm(request.POST, request.FILES)
         if form.is_valid():
-            if 'image' in request.FILES:
-                form.image = request.FILES['image']
-            form.save()
-            return redirect('/movie/')
+            try:
+                cat_name = form.cleaned_data['name']
+                cat_image = form.cleaned_data['image']
+                cat = Category.objects.get_or_create(name=cat_name, image=cat_image)[0]
+                cat.save()
+                return redirect('/movie/')
+            except:
+                return HttpResponse("Err: create category")
     else:
         print(form.errors)
     return render(request, 'movie/category_add.html', {'form': form})
@@ -70,13 +75,25 @@ def movie_add(request, category_name_slug):
 
     form = MovieForm()
     if request.method == 'POST':
-        form = MovieForm(request.POST)
+        form = MovieForm(request.POST, request.FILES)
         if form.is_valid():
             if cat:
-                page = form.save(commit=False)
-                page.category = cat
-                page.views = 0
-                page.save()
+                movie_title = form.cleaned_data['title']
+                movie_director = form.cleaned_data['director']
+                movie_writers = form.cleaned_data['writers']
+                movie_stars = form.cleaned_data['stars']
+                movie_storyline = form.cleaned_data['storyline']
+                movie_image = form.cleaned_data['image']
+                movie = Movie.objects.get_or_create(
+                    category = cat, 
+                    title = movie_title,
+                    director = movie_director,
+                    writers = movie_writers,
+                    stars = movie_stars,
+                    storyline = movie_storyline,
+                    image = movie_image)[0]
+                movie.save()
+                
                 return redirect(reverse('movie:category', kwargs={'category_name_slug': category_name_slug}))
         else:
             print(form.errors)

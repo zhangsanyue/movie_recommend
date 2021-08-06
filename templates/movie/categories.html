@@ -22,8 +22,8 @@
     {% for category in categories %}
         <li>
             <a class="category-link" href={% url 'movie:category' category.slug %}>
-                {% comment %} <img class="category-img" src="../../static/images/rango.jpg" alt=""> {% endcomment %}
-                <img class="category-img" src="{{MEDIA_URL}}{{category.image}}" alt="">
+                {% comment %} {% endcomment %}
+                <img class="category-img" src={{MEDIA_URL}}category_images/{{category.name}}.jpg style="width: 180px;" alt="">
                 <div class="category-info">
                     <h1>{{ category.name }}</h1> </br>
                     <h1>Likes:{{ category.likes }}</h1> </br>

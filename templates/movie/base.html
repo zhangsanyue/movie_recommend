@@ -113,7 +113,8 @@
                         {% for movie in movies %}
                         <li>
                             <a class="movie-link" href={% url 'movie:show_movie' movie.slug %}>
-                                <img src={% static 'images/rango.jpg' %} alt="">
+
+                                <img src={{MEDIA_URL}}movie_images/{{movie.slug}}.jpg alt="">
                                 <h3>{{ movie.title }}</h3>
                             </a>
 
@@ -135,7 +136,8 @@
                 {% for category in categories %}
                     <li>
                         <a class="movie-link" href={% url 'movie:category' category.slug %}>
-                            <img src="../../static/images/rango.jpg" alt="">
+                            {% comment %} <img src="{{MEDIA_URL}}{{category.image}}" alt=""> {% endcomment %}
+                            <img src={{MEDIA_URL}}category_images/{{category.name}}.jpg alt="">
                             <h3>
                                 {{ category.name }}
                             </h3>
@@ -178,8 +180,8 @@
         margin-top: 2px;
         width: 234px;
         height: 390px;
-        background-color: #fafafa;
         border-radius: 2px;
+        background-color: #fafafa;
     }
 
     .viewMovie ul li a {
@@ -189,7 +191,8 @@
     }
 
     .movie-img {
-        width: 234px;
+        width: 230px;
+        height: 250px;
         float: left;
     }
 
@@ -198,18 +201,11 @@
         margin-top: 40px;
         text-align: left;
         float: left;
-        width: 766px;
     }
 
-/*    .viewMovie ul li a img {
-        width: 100%;
-        height: 160px;
-        opacity: 0.8;
-        margin: 37px;
-    }*/
-
     .movie-link img{
-        width: 100%;
+        width: 99%;
+        height: 320px;
     }
 
     .movie-link h3{
